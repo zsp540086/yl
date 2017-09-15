@@ -1,0 +1,165 @@
+@import "mixin";
+
+.banner {
+  background: url("../img/area-banner.png") center/cover no-repeat;
+}
+
+.des {
+  @include wh(1226px, auto);
+  margin: 60px auto 40px auto;
+  font-size: 20px;
+  color: #333;
+}
+
+.contact-wrapper {
+  @include wh(1226px, auto);
+  padding-bottom: 70px;
+  margin: auto;
+  .title {
+    @include wh();
+    @include center;
+    flex-direction: column;
+    div {
+      font-size: 34px;
+      color: #F16D60;
+    }
+    .line {
+      @include wh(260px, 1px);
+      background: #26A8D9;
+      margin: 10px 0;
+    }
+  }
+
+  .wrapper {
+    @include wh(1226px, auto);
+    margin: 50px auto 0 auto;
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .img {
+      @include wh(60%, 500px);
+      background: url("../img/area-map.png") center/contain no-repeat;
+    }
+    .content {
+      @include wh(40%, 500px);
+      padding-left: 45px;
+      padding-top: 290px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      align-content: flex-end;
+      flex-direction: column;
+      li {
+        @include wh(100%, auto);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10px;
+        div {
+          @include z(25px);
+          background: #FE0000;
+          margin-right: 10px;
+          border-radius: 50%;
+        }
+        span {
+          font-size: 16px;
+          color: #FE0000;
+        }
+      }
+      li:nth-child(2) {
+        div {
+          background: #01B0F0;
+        }
+        span{
+          color: #01B0F0;
+        }
+      }
+      li:nth-child(3) {
+        div {
+          background: #92D14F;
+        }
+        span{
+          color: #92D14F;
+        }
+      }
+      li:nth-child(4) {
+        div {
+          background: #ECBB44;
+        }
+        span{
+          color: #ECBB44;
+        }
+      }
+    }
+  }
+}
+
+.area-wrapper{
+  @include wh(1226px,auto);
+  margin: 80px auto 0 auto;
+  padding-bottom: 150px;
+  .title {
+    @include wh();
+    @include center;
+    flex-direction: column;
+    div {
+      font-size: 34px;
+      color: #F16D60;
+    }
+    .line {
+      @include wh(300px, 1px);
+      background: #26A8D9;
+      margin: 10px 0;
+    }
+  }
+  .wrapper{
+    @include wh();
+    display: flex;
+    margin-top: 40px;
+
+    li{
+      @include wh(auto,auto);
+      transition: all .8s ease;
+      padding: 20px;
+
+      .img{
+        @include wh(255px,177px);
+        font-size:32px;
+        color: #1295DD;
+        text-align: center;
+        padding-top: 15px;
+      }
+      p{
+        @include wh(260px,auto);
+        font-size:18px;
+        color: #333;
+        text-indent: 2em;
+        margin-top: 40px;
+      }
+    }
+    li:hover{
+      background:#9FD5F1;
+    }
+    li:first-child{
+      .img{
+        background: url("../img/scope1.png") center/contain no-repeat;
+      }
+    }
+    li:nth-child(2){
+      .img{
+        background: url("../img/scope02.png") center/contain no-repeat;
+      }
+    }
+    li:nth-child(3){
+      .img{
+        background: url("../img/scope03.png") center/contain no-repeat;
+      }
+    }
+    li:nth-child(4){
+      .img{
+        background: url("../img/scope04.png") center/contain no-repeat;
+      }
+    }
+  }
+}

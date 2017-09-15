@@ -1,0 +1,140 @@
+@import "mixin";
+
+.search-wrapper {
+  @include wh(1226px, 89px);
+  margin: 100px auto 0 auto;
+
+  form {
+    @include wh(972px, 100%);
+    background: #E07166;
+    padding: 0 40px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+  }
+  input {
+    @include wh(654px, 50px);
+    background: #fff;
+    outline: none;
+    font-size: 25px;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+  }
+  button {
+    @include wh(197px, 50px);
+    outline: none;
+    background: #4B9DC2;
+    @include center;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+.result-wrapper {
+  @include wh(1226px, auto);
+  margin: 173px auto 0 auto;
+
+  .title {
+    @include wh();
+    @include center;
+    flex-direction: column;
+    div {
+      font-size: 32px;
+      color: #F16D60;
+    }
+    .english{
+      font-size: 42px;
+      color: #F16D60;
+    }
+    .line {
+      @include wh(300px, 1px);
+      background: #26A8D9;
+      margin: 10px 0;
+    }
+  }
+
+  .wrapper{
+    @include wh;
+    margin-top: 186px;
+    padding: 0 25px 250px 25px;
+    .titles{
+      font-size:29px;
+      color: #000000;
+    }
+    li{
+      @include wh;
+      margin-top: 128px;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      .content{
+        @include wh(966px,auto);
+
+        .tops{
+          @include wh(100%,52px);
+          border-bottom: 1px solid #F2F2F2;
+          font-size:29px;
+          color: #000000;
+          line-height: 52px;
+          position: relative;
+
+          .lines{
+            @include wh(21%,1px);
+            background: #1297D8;
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            z-index: 10;
+          }
+          span{
+            font-size:29px;
+            color: #1297D8;
+          }
+        }
+        p{
+          font-size:24px;
+          color: #000000;
+          text-indent: 2em;
+          word-break: break-all;
+          margin-top: 53px;
+        }
+      }
+
+      .img{
+        @include z(185px);
+      }
+    }
+  }
+}
+
+.hot-search{
+  @include wh(100%,auto);
+  margin: auto;
+  padding: 30px 0 106px 100px;
+  .tip{
+    font-size:34px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  li{
+    @include wh;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    margin-top: 33px;
+    .circle{
+      @include z(14px);
+      background: #1295DB;
+      margin-right: 26px;
+      border-radius: 50%;
+    }
+    span{
+      font-size:24px;
+      color: #898989;
+    }
+  }
+}

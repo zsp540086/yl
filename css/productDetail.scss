@@ -1,0 +1,66 @@
+@import "mixin";
+.banner{
+  @include wh(100%,300px);
+  background: url("../img/productDetail.png") center/cover no-repeat;
+}
+
+.product-wrapper {
+  @include wh(100%, auto);
+  padding-top: 10px;
+  padding-bottom: 50px;
+  .title {
+    @include wh(1226px, auto);
+    margin: auto;
+    @include center;
+    flex-direction: column;
+
+    div {
+      font-size: 34px;
+      color: #F16D60;
+    }
+    .line {
+      @include wh(600px, 1px);
+      background: #26A8D9;
+      margin: 10px 0;
+    }
+  }
+  img{
+    display: block;
+    @include wh(1136px,578px);
+    margin:20px auto 20px auto;
+  }
+  .wrapper{
+    @include wh(1226,auto);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      @include wh(50%,auto);
+      display: flex;
+      justify-content: flex-start;
+      align-items:center;
+      flex-direction: column;
+      margin-bottom: 30px;
+      .top{
+        @include wh(50%,auto);
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+        .img{
+          @include z(51px);
+          margin:0 22px 0 0;
+        }
+        span{
+          font-size:22px;
+          color: #000;
+        }
+      }
+      div{
+        @include wh(50%,auto);
+        font-size:16px;
+        color: #333;
+        margin-top: 15px;
+      }
+    }
+  }
+}

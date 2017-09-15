@@ -1,0 +1,93 @@
+.banner {
+
+  background: url("../img/productDetail.png") center/cover no-repeat;
+}
+
+.product-wrapper {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.product-wrapper .title {
+  width: 1226px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-wrapper .title div {
+  font-size: 32px;
+  color: #F16D60;
+}
+
+.product-wrapper .title .english {
+  font-size: 42px;
+  color: #F16D60;
+}
+
+.product-wrapper .title .line {
+  width: 800px;
+  height: 1px;
+  background: #26A8D9;
+  margin: 10px 0;
+}
+
+.product-wrapper img {
+  display: block;
+  width: 1136px;
+  height: 578px;
+  margin: 120px auto 210px auto;
+}
+
+.product-wrapper .wrapper {
+  width: 1226px;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.product-wrapper .wrapper li {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 130px;
+}
+
+.product-wrapper .wrapper li .top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-wrapper .wrapper li .top .img {
+  width: 53px;
+  height: 53px;
+  margin: 0 22px 0 0;
+}
+
+.product-wrapper .wrapper li .top span {
+  font-size: 28px;
+  color: #000;
+}
+
+.product-wrapper .wrapper li div {
+  width: 100%;
+  height: auto;
+  font-size: 21px;
+  color: #333;
+  margin-top: 15px;
+  line-height: 30px;
+}

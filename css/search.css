@@ -31,9 +31,8 @@
   height: 50px;
   outline: none;
   background: #4B9DC2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  line-height: 50px;
   font-size: 30px;
   color: #fff;
   border: none;
